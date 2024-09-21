@@ -1,0 +1,1191 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #d2b511, #000000), url('img/bga.jpeg'); /* Gradien dan gambar */
+    background-size: cover; /* Gambar menyesuaikan ukuran layar */
+    background-position: center; /* Gambar diposisikan di tengah */
+    background-repeat: no-repeat; /* Agar gambar tidak mengulang */
+    background-attachment: fixed; /* Membuat gambar tetap saat scrolling */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: #333;
+}
+
+.no-scroll {
+    overflow: hidden; /* Mencegah scroll pada halaman */
+}
+
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+.icon_e {
+    width: 26px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: auto;
+    margin-right: 5px; /* Jarak antara ikon dan teks */
+    vertical-align: middle; /* Menjaga ikon sejajar dengan teks */
+}
+.icon_c {
+    width: 36px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: auto;
+    margin-right: 5px; /* Jarak antara ikon dan teks */
+    vertical-align: middle; /* Menjaga ikon sejajar dengan teks */
+}
+.icon_i {
+    width: 24px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: auto;
+    margin-right: 5px; /* Jarak antara ikon dan teks */
+    vertical-align: middle; /* Menjaga ikon sejajar dengan teks */
+}
+.icon_m {
+    width: 24px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: auto;
+    margin-right: 5px; /* Jarak antara ikon dan teks */
+    vertical-align: middle; /* Menjaga ikon sejajar dengan teks */
+}
+.icon_s {
+    width: 24px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: auto;
+    margin-right: 5px; /* Jarak antara ikon dan teks */
+    vertical-align: middle; /* Menjaga ikon sejajar dengan teks */
+}
+.icon_z {
+    width: 60px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: auto;
+    margin-right: 5px; /* Jarak antara ikon dan teks */
+    vertical-align: middle; /* Menjaga ikon sejajar dengan teks */
+    background: linear-gradient(to bottom, #f8e7a2, #f0c74a, #d4a30d, #a67603);
+    border-radius: 100px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Gambar Pengantin */
+.hero-top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-image: url('img/pengantin.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+/* Gambar Background */
+.hero-bottom-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: url('img/bg.jpeg');
+    background-size: cover;
+    background-position: top;
+    z-index: 0;
+    opacity: 0.5;
+    filter: blur(10px);
+}
+
+/* Efek Gradient Pudar */
+.hero-top-image::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 1));
+    z-index: 2;
+}
+/* Konten Utama */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+}
+
+/* Desain Card Nama */
+.couple-des {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.2; /* Sedikit menambah tinggi baris untuk jarak antar teks */
+    background-color: rgba(255, 255, 255, 1); /* Latar belakang tetap putih */
+    padding: 8px; /* Mengurangi padding sedikit */
+    border-radius: 8px; /* Efek rounded lebih kecil */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* Mengurangi bayangan agar lebih lembut */
+    margin-top: 5px; /* Sedikit menambah jarak atas dari elemen sebelumnya */
+}
+
+.name-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-family: 'Great Vibes', cursive;
+    background: linear-gradient(90deg, #D4AF37, #FFFFFF, #8B4513);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    margin: 0;
+    text-align: center;
+}
+.hero-titl {
+    font-size: 2.5rem;
+    font-family: 'Great Vibes', cursive;
+    color: #020202;
+    margin: 0;
+    text-align: center;
+}
+.invitation-text {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    line-height: 1;
+    color: #4f5d75;
+    text-align: center;
+}
+
+.scroll-button {
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #f8e7a2, #f0c74a, #d4a30d, #a67603); /* Linear gradient dari hijau muda ke hijau gelap */
+    color: #000000;
+    border: 1px solid #000000; /* Tambahkan border untuk efek 3D */
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Efek transisi untuk hover */
+    box-shadow: 0 4px 0 #adadad; /* Bayangan tombol untuk efek 3D */
+}
+
+.scroll-button:hover {
+    background: linear-gradient(to bottom, #f8e7a2, #f0c74a, #d4a30d, #a67603); /* Ubah gradient saat hover untuk efek kedalaman */
+    transform: translateY(-2px); /* Efek tombol terangkat saat hover */
+}
+.scroll-button:active {
+    transform: translateY(1px); /* Efek tombol ditekan */
+    box-shadow: 0 2px 0 #47854a; /* Kurangi bayangan untuk menunjukkan kedalaman saat tombol ditekan */
+}
+
+/* Framed Sections */
+.framed-section {
+    background-image: url('img/bgcard.jpg'); /* Menambahkan gambar background */
+    background-size: cover; /* Mengatur ukuran background agar menutupi seluruh area */
+    background-position: center; /* Menempatkan gambar background di tengah */
+    padding: 20px; /* Menambahkan padding agar konten tidak menempel ke tepi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan */
+    position: relative; /* Memastikan posisi relatif untuk penempatan elemen-elemen dalam section */
+    overflow: hidden; /* Menyembunyikan elemen yang melampaui batas section */
+}
+
+.section-frame {
+    position: absolute;
+    top: -2%;
+    left: 41%;
+    transform: translateX(-50%); /* Untuk memastikan gambar selalu berada di tengah card */
+    width: 250px; /* Tetapkan ukuran lebar gambar */
+    height: 250px; /* Tetapkan ukuran tinggi gambar */
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 1s, transform 1s;
+    transform-origin: center;
+}
+.section-fram {
+    position: absolute;
+    bottom: -20vh;
+    right: 50%;
+    transform: translateX(-10%) rotate(0deg); /* Mulai dari rotasi 0 derajat */
+    width: 250px; /* Tetapkan ukuran lebar gambar */
+    height: 270px; /* Tetapkan ukuran tinggi gambar */
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 1s, transform 1s;
+    transform-origin: center;
+
+}
+.section-farm {
+    position: absolute;
+    top: -12.25%;
+    right: 50%;
+    transform: translateX(-10%) rotate(0deg); /* Mulai dari rotasi 0 derajat */
+    width: 250px; /* Tetapkan ukuran lebar gambar */
+    height: 270px; /* Tetapkan ukuran tinggi gambar */
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 1s, transform 1s;
+    transform-origin: center;
+
+}
+.section-far {
+    position: absolute;
+    top: -11.6%;
+    right: 50%;
+    transform: translateX(-10%) rotate(0deg); /* Mulai dari rotasi 0 derajat */
+    width: 250px; /* Tetapkan ukuran lebar gambar */
+    height: 270px; /* Tetapkan ukuran tinggi gambar */
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 1s, transform 1s;
+    transform-origin: center;
+
+}
+.section-fa {
+    position: absolute;
+    top: -12.25%;
+    right: 50%;
+    transform: translateX(-10%) rotate(0deg); /* Mulai dari rotasi 0 derajat */
+    width: 250px; /* Tetapkan ukuran lebar gambar */
+    height: 270px; /* Tetapkan ukuran tinggi gambar */
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 1s, transform 1s;
+    transform-origin: center;
+
+}
+.section-f {
+    position: absolute;
+    top: -20.45%;
+    right: 50%;
+    transform: translateX(-10%) rotate(0deg); /* Mulai dari rotasi 0 derajat */
+    width: 250px; /* Tetapkan ukuran lebar gambar */
+    height: 270px; /* Tetapkan ukuran tinggi gambar */
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 1s, transform 1s;
+    transform-origin: center;
+
+}
+.section-n {
+    position: absolute;
+    top: -14.25%;
+    right: 50%;
+    transform: translateX(-10%) rotate(0deg); /* Mulai dari rotasi 0 derajat */
+    width: 250px; /* Tetapkan ukuran lebar gambar */
+    height: 270px; /* Tetapkan ukuran tinggi gambar */
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 1s, transform 1s;
+    transform-origin: center;
+
+}
+.section-t {
+    position: absolute;
+    top: -15.26%;
+    right: 50%;
+    transform: translateX(-10%) rotate(0deg); /* Mulai dari rotasi 0 derajat */
+    width: 250px; /* Tetapkan ukuran lebar gambar */
+    height: 270px; /* Tetapkan ukuran tinggi gambar */
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 1s, transform 1s;
+    transform-origin: center;
+
+}
+.section-bl {
+    position: absolute;
+    bottom: -7.5%;
+    right: 40%;
+    transform: translateX(-10%) rotate(0deg); /* Mulai dari rotasi 0 derajat */
+    width: 300px; /* Tetapkan ukuran lebar gambar */
+    height: 300px; /* Tetapkan ukuran tinggi gambar */
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 1s, transform 1s;
+    transform-origin: center;
+
+}
+.section-br {
+    position: absolute;
+    bottom: -7.5%;
+    left: 40%;
+    transform: translateX(-10%) rotate(0deg); /* Mulai dari rotasi 0 derajat */
+    width: 300px; /* Tetapkan ukuran lebar gambar */
+    height: 300px; /* Tetapkan ukuran tinggi gambar */
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 1s, transform 1s;
+    transform-origin: center;
+
+}
+.section-title{
+    background: linear-gradient(90deg, #D4AF37, #FFFFFF, #8B4513);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+/* Animasi untuk gambar daun aktif */
+.active {
+    opacity: 0.3;
+    animation: leafSwing 3s infinite alternate ease-in-out;
+}
+
+/* About Us Section */
+.about-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* Image Slider */
+.image-slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 400px;
+    white-space: nowrap;
+}
+
+.slider-track {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+/* Gaya masuk dan keluar gambar slider */
+.slider-photo.active {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 1;
+}
+
+/* Countdown Timer */
+.timer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Atur jarak antar card */
+    margin-top: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Lebar card */
+    height: 50px; /* Tinggi card */
+    background: linear-gradient(to bottom, #f8e7a2, #f0c74a, #d4a30d, #a67603);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.countdown-number {
+    font-size: 1.5rem;
+    color: #ffffff; /* Warna teks angka */
+    margin-bottom: 5px;
+}
+
+.countdown-label {
+    font-size: 0.8rem;
+    color: #020202; /* Warna teks label */
+    margin-top: -5px;
+}
+/* Container Save the Date */
+.save-date-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Info Tanggal */
+.date-info {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    margin-bottom: 15px;
+    gap: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 100px;
+    height: auto;
+    width: 100%;
+}
+.event-day, .event-month, .event-year {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+
+/* Tombol Save the Date */
+.save-date-button {
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #f8e7a2, #f0c74a, #d4a30d, #a67603); /* Linear gradient dari hijau muda ke hijau gelap */
+    color: #000000;
+    border: 1px solid #2e7d32; /* Tambahkan border untuk efek 3D */
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Efek transisi untuk hover */
+    box-shadow: 0 4px 0 #000000; /* Bayangan tombol untuk efek 3D */
+    text-decoration: none;
+}
+
+.save-date-button:hover {
+    background: linear-gradient(to bottom, #f8e7a2, #f0c74a, #d4a30d, #a67603); /* Ubah gradient saat hover untuk efek kedalaman */
+    transform: translateY(-2px); /* Efek tombol terangkat saat hover */
+    box-shadow: 0 6px 0 #000000, 0 6px 15px rgba(0, 0, 0, 0.1); /* Tambahkan shadow bawah untuk efek lebih nyata */
+}
+
+.save-date-button:active{
+    transform: translateY(1px); /* Efek tombol ditekan */
+    box-shadow: 0 2px 0 #2e7d32;
+}
+
+.save-date-button i {
+    margin-right: 5px;
+}
+
+
+
+
+/* Detail Bagian Mempelai */
+/* Foto Mempelai */
+.couple-photos {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Jarak antara dua foto */
+    margin-bottom: 20px;
+}
+
+.couple-photo {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #A3D8A5;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    transform: translateY(20px); /* Posisi awal untuk animasi */
+}
+
+/* Detail Mempelai */
+.details-container {
+    margin-top: 20px;
+}
+
+.couple-name {
+    font-family: 'The Mumbai Stickes', cursive;
+    font-size: 26px;
+    background: linear-gradient(90deg, #D4AF37, #FFFFFF, #8B4513);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+.couple-nam {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    background: linear-gradient(90deg, #D4AF37, #FFFFFF, #8B4513);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+.couple-na {
+    font-family: 'The Mumbai Stickes', cursive;
+    font-size: 26px;
+    background: linear-gradient(90deg, #D4AF37, #FFFFFF, #8B4513);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+.couple-desc {
+    font-family: 'Laila', serif;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 1); /* Latar belakang putih transparan */
+    padding: 10px; /* Menambahkan padding di dalam card */
+    border-radius: 10px; /* Efek rounded corners untuk card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    display: inline-block; /* Agar background mengikuti ukuran teks */
+    margin-top: 10px; /* Jarak atas dari elemen sebelumnya */
+}
+
+.instagram-button {
+    display: flex;
+    align-items: center; /* Menjaga ikon dan teks sejajar secara vertikal */
+    justify-content: center; /* Pusatkan ikon dan teks di dalam button */
+    align-self: center;
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #f8e7a2, #f0c74a, #d4a30d, #a67603); /* Linear gradient dari hijau muda ke hijau gelap */
+    color: #000000;
+    border: 1px solid #070707; /* Tambahkan border untuk efek 3D */
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Efek transisi untuk hover */
+    box-shadow: 0 4px 0 #000000; /* Bayangan tombol untuk efek 3D */
+    text-decoration: none;
+}
+.instagram-button i {
+    margin-right: 5px;
+    font-size: 1rem;
+}
+.instagram-button:hover{
+    background: linear-gradient(to bottom, #f8e7a2, #f0c74a, #d4a30d, #a67603); /* Ubah gradient saat hover untuk efek kedalaman */
+    transform: translateY(-2px); /* Efek tombol terangkat saat hover */
+}
+
+.instagram-button:active{
+    transform: translateY(1px); /* Efek tombol ditekan */
+}
+
+.separator {
+    font-size: 30px;
+    background: linear-gradient(90deg, #D4AF37, #FFFFFF, #8B4513);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'The Mumbai Stickes', cursive;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* end dari details */
+
+
+/* address full */
+/* Card untuk Acara */
+.event-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Card dengan latar belakang putih transparan */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners untuk card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    margin: 20px auto; /* Margin untuk memberikan jarak antara card */
+    max-width: 350px; /* Lebar maksimal card */
+    text-align: center;
+}
+
+/* Judul Acara */
+.event-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+/* Hari Acara */
+.event-day {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Tanggal Acara */
+.event-date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    color: #000000;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Bulan dan Tahun Acara */
+.event-month-year {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #080808;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Deskripsi Lokasi dan Waktu Acara */
+.event-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Tombol Maps */
+.button-maps {
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #f8e7a2, #f0c74a, #d4a30d, #a67603); /* Linear gradient dari hijau muda ke hijau gelap */
+    color: #000000;
+    border: 1px solid #ffffff; /* Tambahkan border untuk efek 3D */
+    padding: 10px 20px; /* Kurangi padding untuk memperbaiki tampilan */
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Efek transisi untuk hover */
+    box-shadow: 0 4px 0 #000000; /* Bayangan tombol untuk efek 3D */
+    text-decoration: none;
+    width: fit-content; /* Memastikan tombol menyesuaikan konten */
+}
+
+.button-maps:hover {
+    background: linear-gradient(to bottom, #f8e7a2, #f0c74a, #d4a30d, #a67603); /* Ubah gradient saat hover untuk efek kedalaman */
+    transform: translateY(-2px); /* Efek tombol terangkat saat hover */
+}
+
+.button-maps:active{
+    transform: translateY(1px); /* Efek tombol ditekan */
+    box-shadow: 0 2px 0 #2e7d32; 
+}
+/* ending adress */
+
+/* full gift */
+/* Konten Wedding Gift */
+.gift-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih transparan */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 350px;
+    text-align: center;
+}
+.codes-title{
+    font-family: 'Chewy', cursive;
+    font-size: 15px;
+   color: #fff;
+    margin-bottom: 5px;
+}
+.gift-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.gift-header i.icon {
+    font-size: 30px;
+    color: #28a745; /* Warna hijau ikon */
+}
+
+.gift-header h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.gift-buttons {
+    display: block; /* Pastikan tombol berada dalam satu kolom */
+    margin-top: 15px;
+    text-align: center; /* Memusatkan konten secara horizontal */
+}
+
+.gift-button {
+    display: block; /* Mengatur tombol agar tampil dalam blok, satu di atas yang lain */
+    margin: 10px auto; /* Mengatur margin untuk memisahkan tombol dan memusatkannya */
+    background: linear-gradient(to bottom, #f8e7a2, #f0c74a, #d4a30d, #a67603); /* Linear gradient dari hijau muda ke hijau gelap */
+    color: #000000;
+    border: 1px solid #000000; /* Tambahkan border untuk efek 3D */
+    padding: 10px 20px; /* Tambahkan sedikit lebih banyak padding untuk tampilan yang lebih proporsional */
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Efek transisi untuk hover */
+    box-shadow: 0 4px 0 #000000; /* Bayangan tombol untuk efek 3D */
+    text-decoration: none;
+    width: 200px; /* Atur lebar tombol agar konsisten */
+}
+
+.gift-button:hover {
+    background: linear-gradient(to bottom, #f8e7a2, #f0c74a, #d4a30d, #a67603); /* Ubah gradient saat hover untuk efek kedalaman */
+    transform: translateY(-2px); /* Efek tombol terangkat saat hover */
+}
+
+.gift-button:active {
+    transform: translateY(1px); /* Efek tombol ditekan */
+    box-shadow: 0 2px 0 #000000; /* Kurangi bayangan untuk menunjukkan kedalaman saat tombol ditekan */
+}
+
+/* end gift */
+
+/* galery */
+/* Pengaturan Galeri */
+.gallery-container {
+    overflow-x: auto; /* Aktifkan scroll horizontal */
+    white-space: nowrap; /* Mencegah kolom turun ke bawah */
+    width: 100%;
+    padding-bottom: 10px; /* Ruang di bawah untuk scroll */
+}
+
+
+/* Galeri */
+.image-row {
+    display: flex; /* Susun gambar secara horizontal */
+    gap: 2px; /* Jarak antar gambar */
+    animation: auto-scroll 30s linear infinite; /* Animasi scroll otomatis */
+}
+
+.gallery-item {
+    width: 200px; /* Lebar gambar */
+    height: 300px; /* Tinggi gambar */
+    background-size: cover; /* Sesuaikan ukuran background */
+    background-position: center; /* Posisikan background di tengah */
+    border-radius: 10px; /* Sudut melengkung */
+    flex-shrink: 0; /* Jangan mengecilkan gambar */
+    cursor: pointer; /* Tampilkan cursor pointer untuk gambar */
+}
+
+/* Modal */
+.modal {
+    display: none; /* Sembunyikan modal secara default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Latar belakang gelap */
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 80%;
+    max-height: 80%;
+    text-align: center;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #bbb;
+}
+
+.modal-nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.modal-prev {
+    left: 0;
+}
+
+.modal-next {
+    right: 0;
+}
+
+.modal-nav:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Animasi untuk scroll otomatis */
+@keyframes auto-scroll {
+    0% {
+        transform: translateX(0); /* Mulai dari posisi awal */
+    }
+    100% {
+        transform: translateX(-400%); /* Pindah ke kiri secara penuh */
+    }
+}
+
+
+/* end galery */
+
+/* coment */
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Warna putih dengan transparansi */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+#comment-form input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+#comment-form textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+#comment-form button {
+    background-color: #4caf50;
+    color: #000000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#comment-form button:hover {
+    background-color: #43a047;
+}
+#comments-container {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    max-height: 400px; /* Batasi tinggi maksimal kontainer komentar */
+    overflow-y: auto; /* Menambahkan scroll vertikal jika konten melebihi batas */
+    width: 100%; /* Lebar penuh untuk kontainer komentar */
+    padding: 0 20px;
+}
+
+#comments-list {
+    display: flex;
+    flex-direction: column; /* Mengatur arah layout vertikal */
+    width: 100%; /* Lebar penuh untuk daftar komentar */
+    border-radius: 10px; /* Menambahkan radius pada daftar komentar */
+    color: #FFFFFF; /* Warna teks */
+}
+
+.comment-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparansi penuh */
+    border-radius: 10px;
+    padding: 5px 10px; /* Padding untuk dalam card */
+    display: flex; /* Menggunakan flex untuk menata elemen di dalamnya */
+    flex-direction: column; /* Mengatur arah layout vertikal */
+    align-items: flex-start; /* Mengatur elemen dalam ke kiri */
+    word-wrap: break-word; /* Memastikan kata yang panjang akan dipecah */
+    word-break: break-word; /* Memutuskan kata jika terlalu panjang */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Shadow yang lebih besar untuk efek depth */
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi untuk animasi hover */
+    overflow: visible; /* Pastikan konten yang melebihi tinggi terlihat */
+    background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)); /* Gradient transparan untuk efek lebih menarik */
+    backdrop-filter: blur(6px); /* Efek blur pada background */
+    width: 100%; /* Lebar penuh */
+    margin-bottom: 10px; /* Jarak antar komentar */
+}
+
+/* Nama pengirim */
+.comment-item strong {
+    font-size: 16px; /* Ukuran font lebih kecil */
+    font-weight: bold; /* Menjadikan nama tebal */
+    margin-right: auto; /* Mengatur jarak antara nama dan tanggal */
+    background: linear-gradient(90deg, #d8ab18, #000000, #8B4513);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Warna teks */
+}
+
+/* Tanggal komentar */
+.comment-item small {
+    font-size: 12px; /* Ukuran font kecil untuk tanggal */
+    color: #000000; /* Warna abu-abu terang untuk tanggal */
+    margin-top: -15px; /* Naikkan tanggal ke atas */
+    align-self: flex-end; /* Menyelaraskan tanggal ke kanan */
+}
+
+/* Isi komentar */
+.comment-item p {
+    font-size: 11px; /* Ukuran font lebih kecil untuk komentar */
+    color: #000000; /* Warna teks komentar */
+    margin-top: 5px; /* Jarak antara tanggal dan teks komentar */
+    line-height: 1.4; /* Jarak antar baris teks */
+    text-align: left; /* Penataan teks ke kiri */
+    width: 100%; /* Lebar penuh untuk komentar */
+}
+
+/* Efek hover untuk card komentar */
+.comment-item:hover {
+    transform: scale(1.02); /* Efek membesar sedikit saat hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Efek shadow lebih besar saat hover */
+    background-color: rgba(255, 255, 255, 0.25); /* Meningkatkan transparansi saat hover */
+}
+
+/* Garis pemisah antar komentar */
+.comment-item + .comment-item {
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Garis pemisah antar komentar */
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+
+
+/* Scrollbar khusus untuk daftar komentar */
+#comments-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+#comments-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#comments-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+#comments-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* end coment */
+
+
+/* Gaya judul dan pesan terima kasih */
+.thanks-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    background: linear-gradient(90deg, #D4AF37, #FFFFFF, #8B4513);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.thanks-message {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Gaya slider gambar */
+.image-slide {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Gambar tidak terlihat awalnya */
+    transition: opacity 1s ease-in-out; /* Transisi untuk perubahan opacity */
+}
+
+.active-img {
+    opacity: 1; /* Hanya gambar aktif yang terlihat */
+}
+
+.couple-tag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+/* end */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Footer */
+footer {
+    background: linear-gradient(to bottom, #f8e7a2, #f0c74a, #d4a30d, #a67603); /* Warna latar belakang */
+    color: #ffffff; /* Warna teks */
+    padding: 20px 0; /* Padding di dalam footer */
+    text-align: center; /* Teks berada di tengah */
+    font-family: 'Montserrat', sans-serif; /* Font untuk keseluruhan */
+    position: relative;
+}
+
+.footer-content {
+    max-width: 900px; /* Lebar maksimal untuk konten footer */
+    margin: 0 auto; /* Tengah-tengahkan konten */
+    display: flex; /* Gunakan flexbox */
+    flex-direction: column; /* Kolom vertikal */
+    align-items: center; /* Rata tengah secara horizontal */
+    color: #000000;
+}
+
+.footer-content p {
+    margin: 5px 0; /* Jarak antar paragraf */
+    font-size: 14px; /* Ukuran font */
+    color: #000000;
+}
+
+.footer-promotion {
+    margin-top: 10px; /* Jarak antara konten footer utama dan promosi */
+    font-size: 13px; /* Ukuran font untuk promosi */
+    color: #000000;
+}
+
+.contact-link {
+    color: #000000; /* Warna teks link */
+    text-decoration: none; /* Menghilangkan garis bawah link */
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Teks bergaris bawah saat hover */
+}
+
+footer p strong {
+    color: #000000; /* Warna untuk teks yang ditebalkan */
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+@keyframes leafSwing {
+    0%, 100% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+/* Gaya animasi masuk dan keluar */
+@keyframes slideInLeft {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOutLeft {
+    0% { transform: translateX(0); opacity: 1; }
+    100% { transform: translateX(-100%); opacity: 0; }
+}
+
+@keyframes slideInRight {
+    0% { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOutRight {
+    0% { transform: translateX(0); opacity: 1; }
+    100% { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes stay {
+    0% { transform: translateX(0); opacity: 1; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+
+/* Apply Animation for Scrolling */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+    will-change: opacity, transform;
+}

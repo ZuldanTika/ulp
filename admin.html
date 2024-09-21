@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Generate Invitation Link</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Generate Invitation Link</h1>
+        <form id="invitation-form">
+            <label for="guestName">Enter Guest Name:</label>
+            <input type="text" id="guestName" placeholder="Enter name">
+            <button type="button" onclick="generateLink()">Generate Link</button>
+        </form>
+        <p id="generated-link" class="link-output"></p>
+        
+        <!-- Tambahkan tombol untuk menghapus semua komentar -->
+        <button id="clear-comments" onclick="clearComments()">Clear All Comments</button>
+    </div>
+  <!-- Konfigurasi Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script>
+    // Konfigurasi Firebase
+    var firebaseConfig = {
+        apiKey: "AIzaSyBt3QHGdYOG6XNljYPmOiyxrezGv6VZD5M",
+        authDomain: "married290924.firebaseapp.com",
+        databaseURL: "https://married290924-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "married290924",
+        storageBucket: "married290924.appspot.com",
+        messagingSenderId: "456184150550",
+        appId: "1:456184150550:web:51283eae6f4494792e5337"
+    };
+    // Inisialisasi Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Mengatur referensi database yang digunakan di seluruh file
+    var commentsRef = firebase.database().ref('comments');
+</script>
+
+    <script src="admin.js"></script>
+</body>
+</html>

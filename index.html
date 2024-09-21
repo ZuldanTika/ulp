@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>zul & Tika Wedding Invitation</title>
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMvd0N8ikI4wlKwxTT20rW5D8s5lJ/5o6Z3XgFW" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&family=Lobster&family=Open+Sans:wght@300;400;700&family=Dancing+Script&family=Lato:wght@300;400;700&family=Pacifico&family=Raleway:wght@300;400;700&family=Sacramento&family=Poppins:wght@300;400;700&family=Playfair+Display:wght@400;700&family=Quicksand:wght@300;400;700&family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Laila:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=The+Mumbai+Stickes&display=swap" rel="stylesheet">
+
+        <!-- firebase -->
+         
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+<body>
+    <!-- Music -->
+    <audio id="background-music" src="lagu.mp3" loop></audio>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-top-image"></div>
+        <div class="hero-bot"></div>
+        <div class="hero-content">
+            <br><br><br><br><br><br><br><br><br><br>
+            <div class="name-card">
+                <h1 class="hero-titl">Zul & Tika</h1>
+                <p>29.09.2024</p>
+            </div>
+            <br><br>
+            <!-- Bagian Teks Undangan dengan JavaScript Terintegrasi -->
+             <div class="couple-des">
+            <p class="invitation-text">
+                Kepada Yth. <br>Bapak/Ibu/Sdr/i<br>
+                <script>
+                    // Fungsi untuk mendapatkan parameter dari URL
+                    function getParameterByName(name, url = window.location.href) {
+                        name = name.replace(/[\[\]]/g, '\\$&');
+                        const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+                        const results = regex.exec(url);
+                        if (!results) return 'Tamu Undangan';
+                        if (!results[2]) return '';
+                        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                    }
+
+                    // Ambil nama dari URL
+                    const nameFromUrl = getParameterByName('name') || 'Tamu Undangan';
+                    
+                    // Tampilkan nama di dalam HTML
+                    document.write(`${nameFromUrl}`);
+                </script>
+                <br>di Tempat
+            </p>
+        </div>
+            <button class="scroll-button" onclick="scrollToSection('about')">
+                <img src="img/envelope.png" alt="Envelope Icon" class="icon_e"> Buka Undangan
+            </button>
+        </div>
+    </header>
+
+    <!-- About Section with Countdown -->
+    <section id="about" class="section framed-section">
+        <img src="img/daun.png" alt="Frame" class="section-frame animate-on-scroll">
+        <img src="img/daun2.png" alt="Frame" class="section-fram animate-on-scroll">
+        <div class="content-wrapper animate-on-scroll">
+            <h2 class="section-title animate-on-scroll">Assalamualaikum warahmatullahi wabarakatuh</h2>
+            <p class="codes-title animate-on-scroll">Dengan memohon Rahmat dan ridho Allah SWT. Kami mengundang bapak/ibu/saudara/i untuk hadir pada pernikahan :</p>
+            
+           <!-- Image Slider -->
+           <div class="image-slider animate-on-scroll">
+            <div class="slider-track">
+                <img src="img/pengantin.jpg" alt="Couple Image 1" class="slider-photo">
+                <img src="img/pengantin1.jpg" alt="Couple Image 2" class="slider-photo">
+                <img src="img/pengantin2.jpg" alt="Couple Image 3" class="slider-photo">
+                <img src="img/pengantin3.jpg" alt="Couple Image 4" class="slider-photo">
+            </div>
+        </div>
+        <p class="hero-titl animate-on-scroll">the wedding of </p>
+        <h1 class="hero-title animate-on-scroll">Zul & Tika</h1>
+            <!-- Countdown Timer -->
+            <div id="timer" class="timer animate-on-scroll"></div>
+            <!-- Tanggal dan Button Save the Date -->
+            <div class="save-date-container animate-on-scroll">
+                <div class="date-info animate-on-scroll">
+                    <span class="event-month animate-on-scroll">MINGGU, 29 September</span>
+                    <span class="event-year animate-on-scroll">2024</span>
+                </div>
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+Zul+%26+Tika&dates=20240929T100000Z/20240929T180000Z&details=Join+us+for+our+wedding+celebration!&location=Starlight+Gardens" target="_blank" class="save-date-button animate-on-scroll">
+                    <img src="img/calender.png" alt="Envelope Icon" class="icon_c animate-on-scroll"> SAVE THE DATE
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Details -->
+    <section id="details" class="section framed-section">
+        <!-- Gambar Frame -->
+        <img src="img/daun.png" alt="Frame" class="section-frame animate-on-scroll">
+        <img src="img/daun2.png" alt="Frame" class="section-fram animate-on-scroll">
+        <img src="img/daun3.png" alt="Frame" class="section-far animate-on-scroll">
+        
+        <div class="content-wrapper">
+            <p class="codes-title animate-on-scroll">"Dan diantara tanda-tanda kekuasaanNYA ialah diciptakanNYA untukmu pasangan hidup dari jenismu sendiri supaya kamu mendapat ketenangan hati dan dijadikanNYA kasih sayang diantara kamu. Sungguh yang demikian menjadi tanda-tanda kebesaranNYA bagi
+                orang-orang yang berfikir”
+                </p>
+                <p><b><i class="codes-title animate-on-scroll">(QS. Ar-Rum: 21)</i></b></p>
+            <!-- Foto Mempelai -->
+            <div class="couple-photos animate-on-scroll">
+                <img src="img/laki2.jpg" alt="Groom" class="couple-photo">
+                <img src="img/perem.jpg" alt="Bride" class="couple-photo">
+            </div>
+            
+            <!-- Detail Mempelai -->
+            <div class="details-container animate-on-scroll">
+                <!-- Detail Laki-Laki -->
+                <div class="groom-details animate-on-scroll">
+                    <p class="couple-name animate-on-scroll">KHAIDIR S. ZULFIKAR MAYAU, S.T</p>
+                    <p class="couple-desc animate-on-scroll">Anak ke 2 dari Bapak AKBP. Purn. Djunaidi Mayau,SE & Ibu Rosni Madu</p>
+                    <a href="instagram://user?username=story_dzul11" 
+   onclick="window.location.href='https://instagram.com/story_dzul11';" 
+   class="instagram-button animate-on-scroll">
+    <img src="img/ig.png" alt="Instagram Icon" class="icon_i"> Instagram
+</a>
+
+                </div>
+    
+                <!-- Simbol '&' -->
+                <div class="separator">DENGAN</div>
+    
+                <!-- Detail Perempuan -->
+                <div class="bride-details animate-on-scroll">
+                    <p class="couple-name animate-on-scroll">SARTIKA LUBIS. S.Tr.keb </p>
+                    <p class="couple-desc animate-on-scroll">Anak ke 2 dari Bapak Efendi Lubis & Ibu Masruni Toraya</p>
+                    <a href="instagram://user?username=srtkalbs_" 
+   onclick="window.location.href='https://instagram.com/srtkalbs_';" 
+   class="instagram-button animate-on-scroll">
+    <img src="img/ig.png" alt="Instagram Icon" class="icon_i"> Instagram
+</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Address -->
+    <section id="address" class="section framed-section">
+        <img src="img/daun.png" alt="Frame" class="section-frame animate-on-scroll">
+        <img src="img/daun2.png" alt="Frame" class="section-fram animate-on-scroll">
+        <img src="img/daun3.png" alt="Frame" class="section-fa animate-on-scroll">
+        <div class="content-wrapper">
+            <h2 class="couple-name animate-on-scroll">Jadwal Acara</h2>
+            <!-- Card untuk Acara Akad Nikah -->
+            <div class="event-card animate-on-scroll">
+                <p class="event-title animate-on-scroll">Akad Nikah</p>
+                <p class="event-day animate-on-scroll"><i class="fa fa-calendar-day"></i> Minggu</p>
+                <p class="event-date animate-on-scroll"><i class="fa fa-calendar-alt"></i> 29</p>
+                <p class="event-month-year animate-on-scroll">September 2024</p>
+                <p class="event-description animate-on-scroll">
+                    <i class="fa fa-clock animate-on-scroll"></i> 09:00 WIT - Selesai <br>
+                    Jalan warahmade tanjung sebrang jalan naik <br><b><i>DEPO PERTAMINA</i></b><br>
+                    (Rumah Kediaman Bapak Yusri Lataraya)
+                </p>
+                <a href="https://www.google.com/maps?q=-2.933564,132.312320" target="_blank" class="button-maps animate-on-scroll">
+                    <img src="img/maps.png" alt="Maps Icon" class="icon_m"> Maps
+                </a>                
+            </div>
+    
+            <!-- Card untuk Acara Resepsi -->
+            <div class="event-card animate-on-scroll">
+                <p class="event-title animate-on-scroll">Acara Resepsi</p>
+                <p class="event-day animate-on-scroll"><i class="fa fa-calendar-day"></i> Minggu</p>
+                <p class="event-date animate-on-scroll"> 29</p>
+                <p class="event-month-year animate-on-scroll">September 2024</p>
+                <p class="event-description animate-on-scroll">
+                    <i class="fa fa-clock animate-on-scroll"></i> 13:00 WIT - Selesai <br>
+                    Jalan warahmade tanjung sebrang jalan naik <br><b><i>DEPO PERTAMINA</i></b><br>
+                    (Rumah Kediaman Bapak Yusri Lataraya)
+                </p>
+                <a href="https://www.google.com/maps?q=-2.933564,132.312320" target="_blank" class="button-maps animate-on-scroll">
+                    <img src="img/maps.png" alt="Maps Icon" class="icon_m"> Maps
+                </a>                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gift Section -->
+    <section id="gift" class="section framed-section">
+        <img src="img/daun.png" alt="Frame" class="section-frame animate-on-scroll">
+        <img src="img/daun2.png" alt="Frame" class="section-fram animate-on-scroll">
+        <img src="img/daun3.png" alt="Frame" class="section-farm animate-on-scroll">
+    
+        <!-- Konten untuk Wedding Gift -->
+        <div class="content-wrapper animate-on-scroll">
+            <h1 class="couple-name animate-on-scroll">WEDDING GIFT</h1>
+            <p class="codes-title animate-on-scroll"> Alamat kado & Amplop Digital</p>
+            <p class="codes-title animate-on-scroll">Kehadiran Bapak/ibu/sdr/i sudah cukup. Tetapi, jika ingin memberi lebih, kami akan sangat berterimakasih.</p>
+            <!-- Bagian Alamat Penerima -->
+            <div class="gift-card animate-on-scroll">
+                <img src="img/home.png " class="icon_z animate-on-scroll">
+                <div class="gift-header animate-on-scroll">
+                    <h3>Alamat Penerima</h3>
+                </div>
+                <p>zul</p>
+                <p><i class="fa fa-phone animate-on-scroll"></i> 082134843858</p>
+                <div class="gift-buttons animate-on-scroll">
+                    <button onclick="copyToClipboard('082134843858')" class="gift-button animate-on-scroll">
+                        <img src="img/salin.png" alt="Envelope Icon" class="icon_s animate-on-scroll"> SALIN
+                    </button>
+                    <a href="https://wa.me/6282134843858?text=Tolong+Konfirmasi+Alamat" class="gift-button animate-on-scroll" target="_blank">
+                        <img src="img/wa.png" alt="Envelope Icon" class="icon_s animate-on-scroll"> CONFIRM
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Bagian Bank BRI -->
+            <div class="gift-card animate-on-scroll">
+                <img src="img/atm.png " class="icon_z animate-on-scroll">
+                <div class="gift-header animate-on-scroll">
+                    <h3>Bank BNI</h3>
+                </div>
+                <p>Silakan copy nomor rekening berikut</p>
+                <p>A.n Khaidir Syaihan Z mayau</p>
+                <p><i class="fa fa-university"></i> 0969449874</p>
+                <div class="gift-buttons animate-on-scroll">
+                    <button onclick="copyToClipboard('0969449874')" class="gift-button animate-on-scroll">
+                        <img src="img/salin.png" alt="Envelope Icon" class="icon_s animate-on-scroll"> SALIN
+                    </button>
+                    <a href="https://wa.me/6282134843858?text=Hai+Saya+Salah+Satu+Tamu+Undangan,+Tolong+Konfirmasi+Transfer+Ke+Rekening+BNI+Kamu" class="gift-button animate-on-scroll" target="_blank">
+                        <img src="img/wa.png" alt="Envelope Icon" class="icon_s animate-on-scroll"> CONFIRM
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galery" class="section framed-section">
+        <!-- Gambar Frame -->
+        <img src="img/daun.png" alt="Frame" class="section-frame animate-on-scroll">
+        <img src="img/daun2.png" alt="Frame" class="section-fram animate-on-scroll">
+        <img src="img/daun3.png" alt="Frame" class="section-f animate-on-scroll">
+        <div class="content-wrapper">
+            <p class="couple-name animate-on-scroll">GALERY</p>
+            <div class="gallery-container">
+                <div class="image-row">
+                    <!-- Foto 1 sampai 8 -->
+                    <div class="gallery-item" style="background-image: url('img/photo1.jpg');" data-id="1"></div>
+                    <div class="gallery-item" style="background-image: url('img/photo2.jpg');" data-id="2"></div>
+                    <div class="gallery-item" style="background-image: url('img/photo3.jpg');" data-id="3"></div>
+                    <div class="gallery-item" style="background-image: url('img/photo4.jpg');" data-id="4"></div>
+                    <div class="gallery-item" style="background-image: url('img/photo5.jpg');" data-id="5"></div>
+                    <div class="gallery-item" style="background-image: url('img/photo6.jpg');" data-id="6"></div>
+                    <div class="gallery-item" style="background-image: url('img/photo7.jpg');" data-id="7"></div>
+                    <div class="gallery-item" style="background-image: url('img/photo8.jpg');" data-id="8"></div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+    
+        <!-- Modal untuk menampilkan gambar -->
+        <div id="image-modal" class="modal">
+            <span class="modal-close">&times;</span>
+            <div class="modal-content">
+                <img class="modal-image" src="" alt="Gambar Modal">
+                <button class="modal-nav modal-prev">&lt;</button>
+                <button class="modal-nav modal-next">&gt;</button>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    <!-- komentar dan daftar kehadiran -->
+    <section id="coment" class="section framed-section">
+        <img src="img/daun.png" alt="Frame" class="section-frame animate-on-scroll">
+        <img src="img/daun2.png" alt="Frame" class="section-fram animate-on-scroll">
+        <img src="img/daun3.png" alt="Frame" class="section-n animate-on-scroll">
+        
+        <div class="content-wrapper">
+            <h2 class="couple-name animate-on-scroll">Wishes</h2>
+            <p class="codes-title animate-on-scroll">Berikan doa dan harapan terbaik bapak/ibu/sdr/i</p>
+            
+            <!-- Form untuk menambah komentar -->
+            <form id="comment-form">
+                <input type="text" id="comment-name" placeholder="Masukan Nama" required>
+                <textarea id="comment-text" placeholder="Ucapan Anda" required></textarea>
+                <button type="submit" class="gift-button">Send</button>
+            </form>
+            
+            <!-- Daftar komentar -->
+            <div id="comments-container">
+                <h3 class="couple-name animate-on-scroll">All Wishes</h3>
+                <div id="comments-list"></div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="thanks" class="section framed-section">
+        <img src="img/daun.png" alt="Frame" class="section-frame animate-on-scroll">
+        <img src="img/daun3.png" alt="Frame" class="section-t animate-on-scroll">
+        <img src="img/bl.png" alt="Frame" class="section-bl animate-on-scroll">
+        <img src="img/br.png" alt="Frame" class="section-br animate-on-scroll">
+        
+        <div class="content-wrapper">
+            <h2 class="thanks-title">TERIMAKASIH</h2>
+            <p class="thanks-message">Tidak ada yang lebih kami harapkan dibanding doa restu dan kehadiran Bapak/Ibu/Sdr/i</p>
+            
+            <div class="image-slide">
+                <div class="image-frame">
+                    <img src="img/photo1.jpg" class="gallery-image active-img">
+                    <img src="img/photo2.jpg" class="gallery-image">
+                    <img src="img/photo4.jpg" class="gallery-image">
+                </div>
+            </div>
+            
+            <p class="couple-na">Kami yang berbahagia,</p>
+            <br><br><br><br><br><br>
+            <h3 class="couple-nam">ZUL & TIKA</h3>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Zul & Tika Wedding. All Rights Reserved.</p>
+            <div class="footer-promotion">
+                <p>Created by <strong>Haikal Madu</strong></p>
+                <p>For digital invitation services, contact:</p>
+                <p>📞 <a href="tel:082399026448" class="contact-link">082399026448</a></p>
+                <p>📸 Instagram: <a href="https://www.instagram.com/haikalmadu_/" target="_blank" class="contact-link">@haikalmadu_</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Firebase SDK -->
+<!-- Konfigurasi Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script>
+    // Konfigurasi Firebase
+    var firebaseConfig = {
+        apiKey: "AIzaSyBt3QHGdYOG6XNljYPmOiyxrezGv6VZD5M",
+        authDomain: "married290924.firebaseapp.com",
+        databaseURL: "https://married290924-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "married290924",
+        storageBucket: "married290924.appspot.com",
+        messagingSenderId: "456184150550",
+        appId: "1:456184150550:web:51283eae6f4494792e5337"
+    };
+    // Inisialisasi Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Mengatur referensi database yang digunakan di seluruh file
+    var commentsRef = firebase.database().ref('comments');
+
+
+    
+</script>
+
+
+<!-- File script.js yang berisi logika aplikasi -->
+<script src="script.js"></script>
+</body>
+</html>
